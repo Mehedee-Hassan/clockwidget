@@ -5,27 +5,113 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:layout_gravity="center"
+    android:id="@+id/mainwidget"
     >
 
-    <AnalogClock
-        android:id="@+id/analogClock1"
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/timeHourText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/textColorMin"
+            android:textAlignment="center"
+            android:background="@drawable/textviewbackround"
+
+            android:padding="4dp"
+            android:elevation="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="start"
+            android:gravity="start"
+            />
+
+        <AnalogClock
+            android:id="@+id/analogClock1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:dial="@drawable/clock5"
+            android:hand_minute="@drawable/kata5"
+            android:hand_hour="@drawable/kata5h2"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/timeMinText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="29"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/textColorMin"
+            android:textAlignment="center"
+            android:background="@drawable/textviewbackround"
+
+            android:padding="4dp"
+            android:elevation="21dp"
+            android:layout_marginBottom="25dp"
+            android:layout_gravity="end|bottom"
+            android:gravity="end"
+            />
+
+    </FrameLayout>
+
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:dial="@drawable/clock5"
-        android:hand_minute="@drawable/kata5"
-        android:hand_hour="@drawable/kata5h2"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        />
-    <TextView
-        android:id="@+id/datetext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="03 NOV"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:textColor="#0054d4"
-        android:textAlignment="center"
-        />
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:id="@+id/datetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
+            android:textAlignment="center"
+            android:background="@drawable/textviewback"
+
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/yeartext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
+            android:textAlignment="center"
+            android:background="@drawable/textviewback"
+
+            android:paddingLeft="4dp"
+            android:paddingRight="2dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+
+
+
+            android:layout_marginLeft="3dp"
+
+            />
+    </LinearLayout>
 
 </LinearLayout>

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Clock Widget</string>
+    <string name="appwidget_text">09:30</string>
 </resources>
